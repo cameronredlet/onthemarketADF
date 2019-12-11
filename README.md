@@ -1,4 +1,4 @@
-# RightmoveADF
+# On the Market ADF
 
 PHP library for the On the Market Real Time Property Datafeed.
 
