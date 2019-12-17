@@ -2,20 +2,20 @@
 /**
 *	This file contains the Unknown Request Type Exception Class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Exception;
+namespace cameronredlet\onthemarketADF\Exception;
 
 /**
 *	Unknown Request Type Exception Class
 *
 *	Exception for an unknown request type.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class UnknownRequestTypeException extends \RuntimeException {

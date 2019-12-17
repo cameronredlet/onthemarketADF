@@ -1,41 +1,41 @@
 <?php
 /**
-*	This file contains the RightmoveADF class.
+*	This file contains the onthemarketADF class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF;
+namespace cameronredlet\onthemarketADF;
 
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Exception\UnknownRequestTypeException;
-use Frozensheep\RightmoveADF\Curl;
-use Frozensheep\RightmoveADF\Request\SendProperty;
-use Frozensheep\RightmoveADF\Request\RemoveProperty;
-use Frozensheep\RightmoveADF\Request\GetBranchPropertyList;
-use Frozensheep\RightmoveADF\Request\AddPremiumListing;
-use Frozensheep\RightmoveADF\Request\AddFeaturedProperty;
-use Frozensheep\RightmoveADF\Request\RemoveFeaturedProperty;
-use Frozensheep\RightmoveADF\Request\GetPropertyPerformance;
-use Frozensheep\RightmoveADF\Request\GetBranchPerformance;
-use Frozensheep\RightmoveADF\Request\GetBrandEmails;
-use Frozensheep\RightmoveADF\Request\GetBranchEmails;
-use Frozensheep\RightmoveADF\Request\GetBrandPhoneLeads;
-use Frozensheep\RightmoveADF\Request\GetBranchPhoneLeads;
-use Frozensheep\RightmoveADF\Request\GetPropertyEmails;
+use cameronredlet\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Exception\UnknownRequestTypeException;
+use cameronredlet\onthemarketADF\Curl;
+use cameronredlet\onthemarketADF\Request\SendProperty;
+use cameronredlet\onthemarketADF\Request\RemoveProperty;
+use cameronredlet\onthemarketADF\Request\GetBranchPropertyList;
+use cameronredlet\onthemarketADF\Request\AddPremiumListing;
+use cameronredlet\onthemarketADF\Request\AddFeaturedProperty;
+use cameronredlet\onthemarketADF\Request\RemoveFeaturedProperty;
+use cameronredlet\onthemarketADF\Request\GetPropertyPerformance;
+use cameronredlet\onthemarketADF\Request\GetBranchPerformance;
+use cameronredlet\onthemarketADF\Request\GetBrandEmails;
+use cameronredlet\onthemarketADF\Request\GetBranchEmails;
+use cameronredlet\onthemarketADF\Request\GetBrandPhoneLeads;
+use cameronredlet\onthemarketADF\Request\GetBranchPhoneLeads;
+use cameronredlet\onthemarketADF\Request\GetPropertyEmails;
 
 /**
-*	RightmoveADF Class
+*	onthemarketADF Class
 *
-*	Class for the RightmoveADF.
+*	Class for the onthemarketADF.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
-class RightmoveADF {
+class onthemarketADF {
 
 	use Synthesizer;
 
@@ -63,7 +63,7 @@ class RightmoveADF {
 	protected $arrSynthesize = array(
 		'cert_file' => array('type' => 'string'),
 		'cert_pass' => array('type' => 'string'),
-		'environment' => array('type' => 'int', 'min' => 0, 'max' => 1, 'default' => RightmoveADF::TEST)
+		'environment' => array('type' => 'int', 'min' => 0, 'max' => 1, 'default' => onthemarketADF::TEST)
 	);
 
 	/**
@@ -75,7 +75,7 @@ class RightmoveADF {
 	*	@param int $numEnvironment The environment to run in.
 	*	@return self
 	*/
-	public function __construct($strCertFile, $strCertPass, $numEnvironment = RightmoveADF::TEST){
+	public function __construct($strCertFile, $strCertPass, $numEnvironment = onthemarketADF::TEST){
 		$this->cert_file = $strCertFile;
 		$this->cert_pass = $strCertPass;
 		$this->environment = $numEnvironment;
@@ -90,43 +90,43 @@ class RightmoveADF {
 	*/
 	public static function createRequest($numRequestType){
 		switch($numRequestType){
-			case RightmoveADF::SendProperty:
+			case onthemarketADF::SendProperty:
 				return new SendProperty();
 				break;
-			case RightmoveADF::RemoveProperty:
+			case onthemarketADF::RemoveProperty:
 				return new RemoveProperty();
 				break;
-			case RightmoveADF::GetBranchPropertyList:
+			case onthemarketADF::GetBranchPropertyList:
 				return new GetBranchPropertyList();
 				break;
-			case RightmoveADF::AddPremiumListing:
+			case onthemarketADF::AddPremiumListing:
 				return new AddPremiumListing();
 				break;
-			case RightmoveADF::AddFeaturedProperty:
+			case onthemarketADF::AddFeaturedProperty:
 				return new AddFeaturedProperty();
 				break;
-			case RightmoveADF::RemoveFeaturedProperty:
+			case onthemarketADF::RemoveFeaturedProperty:
 				return new RemoveFeaturedProperty();
 				break;
-			case RightmoveADF::GetPropertyPerformance:
+			case onthemarketADF::GetPropertyPerformance:
 				return new GetPropertyPerformance();
 				break;
-			case RightmoveADF::GetBranchPerformance:
+			case onthemarketADF::GetBranchPerformance:
 				return new GetBranchPerformance();
 				break;
-			case RightmoveADF::GetBrandEmails:
+			case onthemarketADF::GetBrandEmails:
 				return new GetBrandEmails();
 				break;
-			case RightmoveADF::GetBranchEmails:
+			case onthemarketADF::GetBranchEmails:
 				return new GetBranchEmails();
 				break;
-			case RightmoveADF::GetBrandPhoneLeads:
+			case onthemarketADF::GetBrandPhoneLeads:
 				return new GetBrandPhoneLeads();
 				break;
-			case RightmoveADF::GetBranchPhoneLeads:
+			case onthemarketADF::GetBranchPhoneLeads:
 				return new GetBranchPhoneLeads();
 				break;
-			case RightmoveADF::GetPropertyEmails:
+			case onthemarketADF::GetPropertyEmails:
 				return new GetPropertyEmails();
 				break;
 			default:

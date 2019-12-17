@@ -2,17 +2,17 @@
 /**
 *	This file contains the Property Premium Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Groups\PremiumListing;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Groups\PremiumListing;
 
 
 /**
@@ -20,7 +20,7 @@ use Frozensheep\RightmoveADF\Groups\PremiumListing;
 *
 *	Class to handle Property Premium group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class PropertyPremium implements GroupInterface, \JsonSerializable {
@@ -29,6 +29,6 @@ class PropertyPremium implements GroupInterface, \JsonSerializable {
 
 	protected $arrSynthesize = array(
 		'agent_ref' => array('type' => 'string', 'required' => true, 'max' => 80),
-		'premium_listing' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\PremiumListing', 'required' => true)
+		'premium_listing' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\PremiumListing', 'required' => true)
 	);
 }

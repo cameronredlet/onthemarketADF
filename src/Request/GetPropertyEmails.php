@@ -2,26 +2,26 @@
 /**
 *	This file contains the Get Property Emails Request model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace cameronredlet\onthemarketADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestBase;
-use Frozensheep\RightmoveADF\Groups\Network;
-use Frozensheep\RightmoveADF\Groups\Branch;
-use Frozensheep\RightmoveADF\Groups\PropertyRef;
-use Frozensheep\RightmoveADF\Groups\ExportPeriodTime;
+use cameronredlet\onthemarketADF\Request\RequestBase;
+use cameronredlet\onthemarketADF\Groups\Network;
+use cameronredlet\onthemarketADF\Groups\Branch;
+use cameronredlet\onthemarketADF\Groups\PropertyRef;
+use cameronredlet\onthemarketADF\Groups\ExportPeriodTime;
 
 /**
 *	Get Property Emails Class
 *
 *	Class for the get property emails request.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class GetPropertyEmails extends RequestBase {
@@ -40,9 +40,9 @@ class GetPropertyEmails extends RequestBase {
 	*	@var array $arrSynthesize The synthesize array.
 	*/
 	protected $arrSynthesize = array(
-		'network' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Network', 'required' => true),
-		'branch' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Branch', 'required' => true),
-		'property' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\PropertyRef', 'required' => true),
-		'export_period' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\ExportPeriodTime', 'required' => true)
+		'network' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\Network', 'required' => true),
+		'branch' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\Branch', 'required' => true),
+		'property' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\PropertyRef', 'required' => true),
+		'export_period' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\ExportPeriodTime', 'required' => true)
 	);
 }

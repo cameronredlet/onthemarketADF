@@ -2,23 +2,23 @@
 /**
 *	This file contains the Export Period Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
 
 /**
 *	Export Period Group Class
 *
 *	Class to handle Export Period group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class ExportPeriod implements GroupInterface, \JsonSerializable {

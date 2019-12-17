@@ -2,25 +2,25 @@
 /**
 *	This file contains the Premium Listing Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Values\DisplayTypes;
-use Frozensheep\RightmoveADF\Values\StampTexts;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Values\DisplayTypes;
+use cameronredlet\onthemarketADF\Values\StampTexts;
 
 /**
 *	Premium Listing  Group Class
 *
 *	Class to handle Premium Listing group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class PremiumListing implements GroupInterface, \JsonSerializable {
@@ -28,9 +28,9 @@ class PremiumListing implements GroupInterface, \JsonSerializable {
 	use Synthesizer;
 
 	protected $arrSynthesize = array(
-		'display_type' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\DisplayTypes', 'required' => true),
-		'resale_stamp_text' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\StampTexts'),
-		'lettings_stamp_text' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\StampTexts'),
+		'display_type' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\DisplayTypes', 'required' => true),
+		'resale_stamp_text' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\StampTexts'),
+		'lettings_stamp_text' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\StampTexts'),
 		'web_flag' => array('type' => 'boolean', 'default' => false, 'required' => true),
 		'mobile_flag' => array('type' => 'boolean', 'default' => false, 'required' => true)
 	);

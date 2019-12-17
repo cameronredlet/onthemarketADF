@@ -2,26 +2,26 @@
 /**
 *	This file contains the Price Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Values\PriceQualifiers;
-use Frozensheep\RightmoveADF\Values\RentFrequencies;
-use Frozensheep\RightmoveADF\Values\TenureTypes;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Values\PriceQualifiers;
+use cameronredlet\onthemarketADF\Values\RentFrequencies;
+use cameronredlet\onthemarketADF\Values\TenureTypes;
 
 /**
 *	Price Group Class
 *
 *	Class to handle Price group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class Price implements GroupInterface, \JsonSerializable {
@@ -30,11 +30,11 @@ class Price implements GroupInterface, \JsonSerializable {
 
 	protected $arrSynthesize = array(
 		'price' => array('type' => 'number', 'required' => true, 'min' => 1),
-		'price_qualifier' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\PriceQualifiers'),
+		'price_qualifier' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\PriceQualifiers'),
 		'deposit' => array('type' => 'number'),
 		'administration_fee' => array('type' => 'string', 'max' => 4000),
-		'rent_frequency' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\RentFrequencies'),
-		'tenure_type' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\TenureTypes'),
+		'rent_frequency' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\RentFrequencies'),
+		'tenure_type' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\TenureTypes'),
 		'auction' => array('type' => 'boolean'),
 		'tenure_unexpired_years' => array('type' => 'int'),
 		'price_per_unit_area' => array('type' => 'number'),

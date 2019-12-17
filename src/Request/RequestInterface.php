@@ -2,20 +2,20 @@
 /**
 *	This file contains the Request Interface class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace cameronredlet\onthemarketADF\Request;
 
 /**
 *	Request Interface Class
 *
 *	Interface for all requests.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 interface RequestInterface {

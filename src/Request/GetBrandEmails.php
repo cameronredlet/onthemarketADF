@@ -2,25 +2,25 @@
 /**
 *	This file contains the Get Brand Emails Request model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace cameronredlet\onthemarketADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestBase;
-use Frozensheep\RightmoveADF\Groups\Network;
-use Frozensheep\RightmoveADF\Groups\Brand;
-use Frozensheep\RightmoveADF\Groups\ExportPeriodTime;
+use cameronredlet\onthemarketADF\Request\RequestBase;
+use cameronredlet\onthemarketADF\Groups\Network;
+use cameronredlet\onthemarketADF\Groups\Brand;
+use cameronredlet\onthemarketADF\Groups\ExportPeriodTime;
 
 /**
 *	Get Brand Emails Class
 *
 *	Class for the get brand emails request.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class GetBrandEmails extends RequestBase {
@@ -39,8 +39,8 @@ class GetBrandEmails extends RequestBase {
 	*	@var array $arrSynthesize The synthesize array.
 	*/
 	protected $arrSynthesize = array(
-		'network' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Network', 'required' => true),
-		'brand' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Brand', 'required' => true),
-		'export_period' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\ExportPeriodTime', 'required' => true)
+		'network' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\Network', 'required' => true),
+		'brand' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\Brand', 'required' => true),
+		'export_period' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\ExportPeriodTime', 'required' => true)
 	);
 }

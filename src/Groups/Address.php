@@ -2,23 +2,23 @@
 /**
 *	This file contains the Address Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
 
 /**
 *	Address Group Class
 *
 *	Class to handle Address group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class Address implements GroupInterface, \JsonSerializable {

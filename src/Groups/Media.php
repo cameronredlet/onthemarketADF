@@ -2,24 +2,24 @@
 /**
 *	This file contains the Media Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Values\MediaTypes;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Values\MediaTypes;
 
 /**
 *	Media Group Class
 *
 *	Class to handle Media group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class Media implements GroupInterface, \JsonSerializable {
@@ -27,7 +27,7 @@ class Media implements GroupInterface, \JsonSerializable {
 	use Synthesizer;
 
 	protected $arrSynthesize = array(
-		'media_type' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\MediaTypes', 'required' => true),
+		'media_type' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\MediaTypes', 'required' => true),
 		'media_url' => array('type' => 'string', 'required' => true, 'max' => 250),
 		'caption' => array('type' => 'string', 'max' => 50),
 		'sort_order' => array('type' => 'int', 'min' => 0),

@@ -2,25 +2,25 @@
 /**
 *	This file contains the Remove Featured Property Request model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace cameronredlet\onthemarketADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestBase;
-use Frozensheep\RightmoveADF\Groups\Network;
-use Frozensheep\RightmoveADF\Groups\Branch;
-use Frozensheep\RightmoveADF\Groups\PropertyRef;
+use cameronredlet\onthemarketADF\Request\RequestBase;
+use cameronredlet\onthemarketADF\Groups\Network;
+use cameronredlet\onthemarketADF\Groups\Branch;
+use cameronredlet\onthemarketADF\Groups\PropertyRef;
 
 /**
 *	Remove Featured Property Class
 *
 *	Class for the remove featured property request.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class RemoveFeaturedProperty extends RequestBase {
@@ -39,8 +39,8 @@ class RemoveFeaturedProperty extends RequestBase {
 	*	@var array $arrSynthesize The synthesize array.
 	*/
 	protected $arrSynthesize = array(
-		'network' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Network', 'required' => true),
-		'branch' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\Branch', 'required' => true),
-		'property' => array('type' => 'object', 'class' => 'Frozensheep\RightmoveADF\Groups\PropertyRef', 'required' => true)
+		'network' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\Network', 'required' => true),
+		'branch' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\Branch', 'required' => true),
+		'property' => array('type' => 'object', 'class' => 'cameronredlet\onthemarketADF\Groups\PropertyRef', 'required' => true)
 	);
 }

@@ -2,20 +2,20 @@
 /**
 *	This file contains the Curl class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF;
+namespace cameronredlet\onthemarketADF;
 
 /**
 *	Curl Class
 *
 *	Class for sending the request over curl.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class Curl {

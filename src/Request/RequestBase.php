@@ -2,24 +2,24 @@
 /**
 *	This file contains the Request Interface class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Request;
+namespace cameronredlet\onthemarketADF\Request;
 
-use Frozensheep\RightmoveADF\Request\RequestInterface;
-use Frozensheep\RightmoveADF\RightmoveADF;
-use Frozensheep\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Request\RequestInterface;
+use cameronredlet\onthemarketADF\onthemarketADF;
+use cameronredlet\Synthesize\Synthesizer;
 
 /**
 *	Request Interface Class
 *
 *	Interface for all requests.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class RequestBase implements RequestInterface, \JsonSerializable {
@@ -43,7 +43,7 @@ class RequestBase implements RequestInterface, \JsonSerializable {
 	*	@param int $numEnvironment The environment we are in.
 	*	@return string
 	*/
-	public function getURL($numEnvironment = RightmoveADF::TEST){
-		return ($numEnvironment==RightmoveADF::LIVE) ? $this->_strLiveURL : $this->_strTestURL;
+	public function getURL($numEnvironment = onthemarketADF::TEST){
+		return ($numEnvironment==onthemarketADF::LIVE) ? $this->_strLiveURL : $this->_strTestURL;
 	}
 }

@@ -2,22 +2,22 @@
 /**
 *	This file contains the Price Qualifiers Enum class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Values;
+namespace cameronredlet\onthemarketADF\Values;
 
-use Frozensheep\RightmoveADF\Values\ValuesBase;
+use cameronredlet\onthemarketADF\Values\ValuesBase;
 
 /**
 *	Price Qualifiers Enum Class
 *
 *	Class for the different price qualifiers.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class PriceQualifiers extends ValuesBase {

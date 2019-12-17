@@ -2,24 +2,24 @@
 /**
 *	This file contains the Featured Property Group model class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Groups;
+namespace cameronredlet\onthemarketADF\Groups;
 
-use Frozensheep\RightmoveADF\Groups\GroupInterface;
-use Frozensheep\Synthesize\Synthesizer;
-use Frozensheep\RightmoveADF\Values\FeaturedPropertyTypes;
+use cameronredlet\onthemarketADF\Groups\GroupInterface;
+use cameronredlet\Synthesize\Synthesizer;
+use cameronredlet\onthemarketADF\Values\FeaturedPropertyTypes;
 
 /**
 *	Featured Property Group Class
 *
 *	Class to handle Featured Property group.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class FeaturedProperty implements GroupInterface, \JsonSerializable {
@@ -27,6 +27,6 @@ class FeaturedProperty implements GroupInterface, \JsonSerializable {
 	use Synthesizer;
 
 	protected $arrSynthesize = array(
-		'featured_property_type' => array('type' => 'enum', 'class' => 'Frozensheep\RightmoveADF\Values\FeaturedPropertyTypes', 'required' => true)
+		'featured_property_type' => array('type' => 'enum', 'class' => 'cameronredlet\onthemarketADF\Values\FeaturedPropertyTypes', 'required' => true)
 	);
 }

@@ -2,22 +2,22 @@
 /**
 *	This file contains the Conditions Enum class.
 *
-*	@package	Frozensheep\RightmoveADF
-*	@author		Jacob Wyke <jacob@frozensheep.com>
+*	@package	cameronredlet\onthemarketADF
+*	@author		Jacob Wyke <jacob@cameronredlet.com>
 *	@license	MIT
 *
 */
 
-namespace Frozensheep\RightmoveADF\Values;
+namespace cameronredlet\onthemarketADF\Values;
 
-use Frozensheep\RightmoveADF\Values\ValuesBase;
+use cameronredlet\onthemarketADF\Values\ValuesBase;
 
 /**
 *	Conditions Enum Class
 *
 *	Class for the different Conditions.
 *
-*	@package	Frozensheep\RightmoveADF
+*	@package	cameronredlet\onthemarketADF
 *
 */
 class Conditions extends ValuesBase {

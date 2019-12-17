@@ -2,10 +2,10 @@
 
 PHP library for the On the Market Real Time Property Datafeed.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/frozensheep/rightmove-ADF.svg?style=flat-square)](https://packagist.org/packages/frozensheep/rightmove-adf)
-[![Build Status](https://img.shields.io/travis/frozensheep/rightmoveADF/master.svg?style=flat-square)](https://travis-ci.org/frozensheep/rightmoveADF)
-[![Coverage Status](https://coveralls.io/repos/frozensheep/rightmoveADF/badge.svg?branch=master&service=github)](https://coveralls.io/github/frozensheep/rightmoveADF?branch=master)
-[![MIT License](https://img.shields.io/packagist/l/frozensheep/rightmove-ADF.svg?style=flat-square)](https://github.com/frozensheep/rightmoveADF/blob/master/LICENSE)
+[![Latest Stable Version](https://img.shields.io/packagist/v/cameronredlet/rightmove-ADF.svg?style=flat-square)](https://packagist.org/packages/cameronredlet/rightmove-adf)
+[![Build Status](https://img.shields.io/travis/cameronredlet/onthemarketADF/master.svg?style=flat-square)](https://travis-ci.org/cameronredlet/onthemarketADF)
+[![Coverage Status](https://coveralls.io/repos/cameronredlet/onthemarketADF/badge.svg?branch=master&service=github)](https://coveralls.io/github/cameronredlet/onthemarketADF?branch=master)
+[![MIT License](https://img.shields.io/packagist/l/cameronredlet/rightmove-ADF.svg?style=flat-square)](https://github.com/cameronredlet/onthemarketADF/blob/master/LICENSE)
 [![PHP 5.4](https://img.shields.io/badge/php-5.4-8892BF.svg?style=flat-square)](https://php.net/)
 [![PHP 5.5](https://img.shields.io/badge/php-5.5-8892BF.svg?style=flat-square)](https://php.net/)
 [![PHP 5.6](https://img.shields.io/badge/php-5.6-8892BF.svg?style=flat-square)](https://php.net/)
