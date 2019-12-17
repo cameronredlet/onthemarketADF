@@ -1,15 +1,15 @@
 {
 	"name": "cameronredlet/rightmove-adf",
 	"type": "library",
-	"description": "PHP library for the Rightmove Real Time Property Datafeed (ADF).",
-	"keywords": ["rightmove", "api", "adf", "property", "renting", "sales", "real estate", "data feed", "feed"],
+	"description": "PHP library for the On the Market Real Time Property Datafeed (ADF).",
+	"keywords": ["onthemarket", "api", "adf", "property", "renting", "sales", "real estate", "data feed", "feed"],
 	"homepage": "https://github.com/cameronredlet/onthemarketADF",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Jacob Wyke",
-			"email": "jacob@cameronredlet.com",
-			"homepage": "https://cameronredlet.com"
+			"name": "Cameron Lewis",
+			"email": "cameron@redlet.co.uk",
+			"homepage": "https://redlet.co.uk"
 		}
 	],
 	"require": {
