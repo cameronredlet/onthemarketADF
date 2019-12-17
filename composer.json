@@ -1,5 +1,5 @@
 {
-	"name": "cameronredlet/rightmove-adf",
+	"name": "redlet/onthemarket-adf",
 	"type": "library",
 	"description": "PHP library for the On the Market Real Time Property Datafeed (ADF).",
 	"keywords": ["onthemarket", "api", "adf", "property", "renting", "sales", "real estate", "data feed", "feed"],
