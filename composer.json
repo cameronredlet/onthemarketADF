@@ -1,5 +1,5 @@
 {
-	"name": "redlet/onthemarket-adf",
+	"name": "cameronredlet/onthemarket-adf",
 	"type": "library",
 	"description": "PHP library for the On the Market Real Time Property Datafeed (ADF).",
 	"keywords": ["onthemarket", "api", "adf", "property", "renting", "sales", "real estate", "data feed", "feed"],
@@ -15,7 +15,7 @@
 	"require": {
 		"php": ">=5.4",
 		"ext-curl": "*",
-		"cameronredlet/synthesize": "1.*"
+		"frozensheep/synthesize": "1.*"
 	},
 	"autoload": {
 		"psr-4": {
