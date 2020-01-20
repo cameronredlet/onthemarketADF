@@ -27,12 +27,12 @@ class GetBranchPropertyList extends RequestBase {
 	/**
 	*	@var string $_strLiveURL The live request URL.
 	*/
-	protected $_strLiveURL = 'https://adfapi.rightmove.co.uk/v1/property/getbranchpropertylist';
+	protected $_strLiveURL = 'https://realtime-api.onthemarket.com/v1/property/getbranchpropertylist';
 
 	/**
 	*	@var string $_strTestURL The test request URL.
 	*/
-	protected $_strTestURL = 'https://adfapi.adftest.rightmove.com/v1/property/getbranchpropertylist';
+	protected $_strTestURL = 'https://realtime-api.onthemarket.com/v1/property/getbranchpropertylist';
 
 	/**
 	*	@var array $arrSynthesize The synthesize array.
